@@ -4,7 +4,7 @@
 <div class="card">
         <header class="card-header">
             <p class="card-header-title">
-                Miranda
+                Mirandaaa
             </p>
             <p><time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time></p>
             
