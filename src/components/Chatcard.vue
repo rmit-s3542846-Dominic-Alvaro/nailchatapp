@@ -1,12 +1,12 @@
 <template>
-<div class="column is-4 messages hero is-fullheight" id="message-feed">
+<div class="column is-4 messages hero is-fullheight">
 <div class="div">
 <div class="card">
         <header class="card-header">
             <p class="card-header-title">
                 Miranda
             </p>
-            <p><time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time></p>
+            <p style="font-size: 10px;"><time datetime="2016-1-1">11:09 PM</time></p>
             
             
         </header>
@@ -22,7 +22,7 @@
             <p class="card-header-title">
                 Dominic Alvaro
             </p>
-            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            <p style="font-size: 10px;"><time datetime="2016-1-1">11:09 PM</time></p>
             
         </header>
         <div class="card-content">
@@ -35,9 +35,9 @@
     <div class="card">
         <header class="card-header">
             <p class="card-header-title">
-                HOMY
+                Abhi
             </p>
-            <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+            <p style="font-size: 10px;"><time datetime="2016-1-1">11:09 PM</time></p>
             
         </header>
         <div class="card-content">
@@ -47,6 +47,7 @@
             </div>
         </div>
     </div>
+    
 </div>
 </div>
 
@@ -60,28 +61,25 @@ export default {};
 
 </script>
 
-<style>
+<style scoped>
 .card-header{
-  background-color: white;
-  color: black;
-  max-width: 100%;
+  width: 100%;
   position: relative;
-  padding: 5px;
+  background-color: #f4f6fb;
 }
 
 .card{
-  margin: 5px;
-  background-color: blue;
-  border: 0px solid;
-  shadow: 0px;
-  
+  margin-top: 20px;
+  width: 100%;
+  /* border-bottom: 0.1px solid; */
+  /* border-bottom-color: #fc5577; */
+  /* border-bottom-width: thin; 
+  style="background-color: #fc5577"
+  */
 }
-.card-color{
-    background-color: black;
+
+.messages {
+    background-color:#f4f6fb;
 }
-
-
-
-
 </style>
 

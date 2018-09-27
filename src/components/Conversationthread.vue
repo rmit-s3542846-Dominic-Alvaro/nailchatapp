@@ -1,20 +1,35 @@
 <template>
-<div class="column is-6 messages hero is-fullheight" id="message-pane">
-    <div class="card">
+<div class="column is-6 message hero is-fullheight" id="message-pane">
+    <div class="card ca-card">
         <header class="card-header">
             <p class="card-header-title">
                 Miranda
             </p>
         </header>
-        <div class="box" style ="height:735px;">
-            <p>Hello</p>
-            <p>Hey Dom!</p>
-            <p class ="user2">What's up</p>
-            <p>Nothing much just chilling? Wbu</p>
-            <p class ="user2">Yeah nah yeah nah yeah just chillaxing to bruv</p>
-            <p>Madd good stuff bruvvaaa</p>
+        <div class="box ca-box">
+            <div class="ca-message">
+                <span class="tag is-info">Hey, what's up?</span>
+            </div>
+            <div>
+                <span class="tag is-danger">Hey Dom, nothing much just chollin bruv</span>
+            </div>
+            <div class="ca-message">
+                <span class="tag is-info">Bloooddy oath my g, hows the fam</span>
+            </div>
+            <div>
+                <span class="tag is-danger">Bruv, the fam is on point</span>
+            </div>
+            <div class="ca-message">
+                <span class="tag is-info">100% my g</span>
+            </div>
+
+            
         </div>
-        <input class="input is-rounded" type="text" placeholder="Rounded input">
+        <div class="field">
+            <div class="control">
+                <input class="input is-info" type="text" placeholder="write something...">
+            </div>
+        </div>
     </div>
 </div>
 </template>
@@ -25,15 +40,33 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.card{
+    background-color: white;
+    min-height: 100vh;
+}
 
-.chatdiv{
-    background-color: rgb(182, 177, 182);
+.message {
+    background-color:white;
 }
-.user2{
-    text-align: right;
-    color: blue;
+.card-header{
+    color:blue;
 }
+
+.ca-message {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ca-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.ca-box {
+    flex: 1;
+}
+
 </style>
 
 
