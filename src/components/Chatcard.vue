@@ -4,7 +4,7 @@
 <div class="card">
         <header class="card-header">
             <p class="card-header-title">
-                Mirandaaa
+                Miranda
             </p>
             <p><time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time></p>
             
@@ -72,6 +72,9 @@ export default {};
 .card{
   margin: 5px;
   background-color: blue;
+  border: 0px solid;
+  shadow: 0px;
+  
 }
 .card-color{
     background-color: black;
