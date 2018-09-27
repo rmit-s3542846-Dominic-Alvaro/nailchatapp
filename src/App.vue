@@ -1,17 +1,14 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <Chatbox></Chatbox>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Chatbox from '@/components/Chatbox.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    Chatbox,
   }
 }
 </script>
@@ -24,5 +21,12 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+  html,body {
+  font-family: 'Open Sans', serif;
+  font-size: 14px;
+  line-height: 1.5;
+  height: 100%;
+  background-color: #fff;
 }
 </style>
